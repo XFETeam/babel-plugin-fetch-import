@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f42154c-c191-42cd-8cb0-416e2c57d02c" name="Default Changelist" comment="" />
+    <list default="true" id="7f42154c-c191-42cd-8cb0-416e2c57d02c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -52,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            <state relative-caret-position="406">
+              <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -201,7 +203,7 @@
     <option name="width" value="2572" />
     <option name="height" value="1405" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -225,6 +227,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/test/fixtures" />
@@ -335,7 +338,7 @@
       <workItem from="1567916383567" duration="597000" />
       <workItem from="1567969646226" duration="1640000" />
       <workItem from="1568096291094" duration="597000" />
-      <workItem from="1568787732153" duration="3489000" />
+      <workItem from="1568787732153" duration="3668000" />
     </task>
     <task id="LOCAL-00001" summary="打点: 开始进行相关测试">
       <created>1567423504937</created>
@@ -366,7 +369,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33867000" />
+    <option name="totallyTimeSpent" value="34046000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="2572" height="1405" extended-state="0" />
@@ -733,8 +736,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="406">
+          <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
         </state>
       </provider>
     </entry>
