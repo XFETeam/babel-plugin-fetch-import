@@ -12,7 +12,7 @@
     "test": "mocha --compilers js:babel-register",
     "test:watch": "npm run test -- --watch",
     "prepublish": "npm run clean && npm run build",
-    "release-it": "release-it 0.0.1 --no-git.requireCleanWorkingDir"
+    "release-it": "npm publish --access=public --registry=https://registry.npmjs.org/"
   },
   "devDependencies": {
     "@types/babel-types": "^7.0.7",
@@ -38,8 +38,5 @@
     "plugin",
     "babel-plugin",
     "babel-plugin-fetch-require"
-  ],
-  "publishConfig": {
-    "register": "https://registry.npmjs.org/"
-  }
+  ]
 }
