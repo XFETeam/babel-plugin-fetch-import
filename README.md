@@ -1,6 +1,6 @@
 # @xfe-team/babel-plugin-fetch-import
 
-> 当前插件主要用于让 import 支持 http 引入形式, 就像 [Deno](https://github.com/denoland/deno) 一样
+> 当前插件主要用于让 import 支持 http 引入形式, 就像 [Deno](https://deno.land/manual.html#goals) 一样
 
 ## 安装
 
