@@ -1,5 +1,5 @@
 {
-  "name": "@xfe-team/babel-plugin-fetch-require",
+  "name": "@xfe-team/babel-plugin-fetch-import",
   "version": "0.0.1",
   "description": "A babel plugin allow you to import absolute http cdn url",
   "repository": "xfe-team/babel-plugin-fetch-import",
@@ -37,6 +37,6 @@
     "babel",
     "plugin",
     "babel-plugin",
-    "babel-plugin-fetch-require"
+    "babel-plugin-fetch-import"
   ]
 }
