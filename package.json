@@ -1,6 +1,6 @@
 {
   "name": "@xfe-team/babel-plugin-fetch-import",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A babel plugin allow you to import absolute http cdn url",
   "repository": "xfe-team/babel-plugin-fetch-import",
   "author": "She Ailun <529360897@qq.com>",
@@ -11,7 +11,7 @@
     "example": "npm run build && babel example/input.js -o example/output.js",
     "test": "mocha --compilers js:babel-register",
     "test:watch": "npm run test -- --watch",
-    "prepublish": "npm run clean && npm run build",
+    "prepublishOnly": "npm run clean && npm run build && npm run test",
     "release-it": "npm publish --access=public --registry=https://registry.npmjs.org/"
   },
   "devDependencies": {

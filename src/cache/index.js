@@ -2,7 +2,7 @@ const md5 = require('md5');
 const fs = require('fs');
 const mkdirp = require('mkdirp');
 const path = require('path');
-const {name: packageName} = require('../../package.json');
+const { name: packageName } = require('../../package.json');
 
 const safeHash = (message) => md5(message).replace(/[+/]/, '_');
 const cacheDirectory = path.resolve(process.cwd(), `node_modules/.cache/${packageName}`);
@@ -23,7 +23,8 @@ function createCacheDirectoryOnce() {
  */
 function getCacheFilename(url) {
   createCacheDirectoryOnce();
-  return resolveCachePath(safeHash(url));
+  const extname = path.extname(url);
+  return resolveCachePath(safeHash(url)) + extname;
 }
 
 /**
@@ -32,10 +33,10 @@ function getCacheFilename(url) {
  * @param content
  * @returns {{filename: string, content: *}}
  */
-function writeCache({url, content}) {
+function writeCache({ url, content }) {
   const filename = getCacheFilename(url);
   fs.writeFileSync(filename, content);
-  return {filename, content};
+  return { filename, content };
 }
 
 /**
@@ -56,7 +57,7 @@ function readCache(url) {
     const filename = getCacheFilename(url);
     const content = fs.readFileSync(filename).toString();
     const cwdRelativeFilename = getPathRelativeToNodeModules(filename);
-    return {filename, content, cwdRelativeFilename};
+    return { filename, content, cwdRelativeFilename };
   } catch (e) {
     return {};
   }

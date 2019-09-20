@@ -53,9 +53,9 @@ module.exports = {
 #### 作为 commonjs 模块拉取:
 
 ```bash
-  import metaFlexible from 'MODULE:https://unpkg.com/react@16.9.0/umd/react.development.js';
+  import React from 'MODULE:https://unpkg.com/react@16.9.0/umd/react.development.js';
   
-  console.log(metaFlexible);
+  console.log(React);
   // 此时返回 metaFlexible export 的对象
 ```
 
@@ -76,6 +76,10 @@ module.exports = {
 [Deno](https://github.com/denoland/deno)
 
 ## ChangeLog
+
+## 0.0.2
+
+* fix: 修复关于 module import 应该携带原 url 后缀, 这样便于其他 loader 进行进一步的解析的问题
 
 ## 0.0.1
 
