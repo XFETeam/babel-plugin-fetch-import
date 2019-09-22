@@ -28,4 +28,14 @@ describe('正常转换: 转成正确对应结果', () => {
     assert.deepStrictEqual(trim(actual), trim(expected));
     done();
   });
+  it(`期望: 正确解析 import "MODULE" 并下载图片, 最终返回图片对象`, (done) => {
+    const fixtureDir = path.join(__dirname, 'fixtures/image');
+    const actualPath = path.join(fixtureDir, 'actual.js');
+    const actual = transformFileSync(actualPath).code;
+    const expected = fs.readFileSync(
+      path.join(fixtureDir, 'expected.js')
+    ).toString();
+    assert.deepStrictEqual(trim(actual), trim(expected));
+    done();
+  });
 });

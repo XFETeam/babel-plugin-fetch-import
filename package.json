@@ -1,6 +1,6 @@
 {
   "name": "@xfe-team/babel-plugin-fetch-import",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A babel plugin allow you to import absolute http cdn url",
   "repository": "xfe-team/babel-plugin-fetch-import",
   "author": "She Ailun <529360897@qq.com>",
@@ -33,6 +33,9 @@
     "mkdirp": "0.5.1",
     "sync-request": "6.1.0"
   },
+  "files": [
+    "lib"
+  ],
   "keywords": [
     "babel",
     "plugin",

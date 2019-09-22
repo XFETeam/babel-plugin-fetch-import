@@ -75,11 +75,25 @@ module.exports = {
 [babel-plugin-import-customized-require](https://github.com/alienzhou/babel-plugin-import-customized-require) <br />
 [Deno](https://github.com/denoland/deno)
 
+## 功能补全
+
+1. 在 `0.0.3` 版本中加入了 `__extension`, 但仍存在用户可能<b>冲突的</b>使用到了这个 query string 参数. 后续应提供可更改 `__extension` 的配置项
+2. 在 `0.0.3` 版本中加入了 `__extension`, 当前库可以根据返回的 mine-type 自动识别正确的后缀, 尽管这个匹配率不一定会非常高.
+
 ## ChangeLog
+
+## 0.0.4
+
+* feat: 修复 import png 等非文本类型文件出错的问题
+
+## 0.0.3
+
+* feat: 针对部分链接存在不存在后缀的, 如 `'https://github.com/happy'`, 使用者可以在使用 `__extension=js` 来指引当前链接应该使用什么后缀, 如: `'https://github.com/happy?__extension=js'`. 
+这将直接影响 module import 时应该用什么 `loader 进行当前 `url` 解析.
 
 ## 0.0.2
 
-* fix: 修复关于 module import 应该携带原 url 后缀, 这样便于其他 loader 进行进一步的解析的问题
+* fix: 修复关于 `module import` 应该携带原 `url` 后缀, 这样便于其他 `loader` 进行进一步的解析的问题
 
 ## 0.0.1
 

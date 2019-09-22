@@ -15,7 +15,7 @@ const getAbrContent = (content) => {
 const fetch = (url) => {
   let {content, filename, cwdRelativeFilename} = readCache(url);
   if (!content) {
-    content = request('GET', url).getBody().toString();
+    content = request('GET', url).getBody();
     const {filename} = writeCache({url, content});
     log(`new fetch, fetch url = ${url}, store filename = ${filename}, content = ${getAbrContent(content)}`);
   } else {
