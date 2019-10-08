@@ -2,7 +2,7 @@
   "name": "@xfe-team/babel-plugin-fetch-import",
   "version": "0.0.3",
   "description": "A babel plugin allow you to import absolute http cdn url",
-  "repository": "xfe-team/babel-plugin-fetch-import",
+  "repository": "XFETeam/babel-plugin-fetch-import",
   "author": "She Ailun <529360897@qq.com>",
   "main": "lib/index.js",
   "scripts": {
